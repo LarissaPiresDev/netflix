@@ -24,28 +24,41 @@
             <form>
                 <!-- input nome -->
                 <div class="input_box">
-                    <input type="text" placeholder="Nome completo">
-                </div>
-                <!-- input email -->
-                <div class="input_box">
-                    <input type="email" placeholder="Email">
-                </div>
-                <!-- input cpf/cnjp -->
-                <div class="input_box">
-                    <input type="text" placeholder="CPF ou CNPJ">
-                </div>
-                <!-- input data de nascimento -->
-                <div class="input_box">
-                    <input type="date" >
-                </div>
-                <!-- input senha -->
-                <div class="input_box">
-                    <input type="password" placeholder="Senha">
+                    <label for="name" >Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Nome completo"/>
                 </div>
 
-                <!-- botão cadastrar -->
-                <div>
-                    <button class="submit">
+                <!-- input email -->
+                <div class="input_box">
+                    <label for="email" >Email</label>
+                    <input type="email" name="email" id="email"  placeholder="Email"/>  
+                </div>
+                
+                <!-- input cpf -->
+                <div class="input_box">
+                    <label for="cpf" >CPF</label>
+                    <input type="text" name="cpf" id="cpf"placeholder="CPF"/>
+                </div>
+
+                <!-- input data de nascimento -->
+                <div class="input_box">
+                    <label for="birthday" >Data de nascimento</label>
+                    <input type="date" name="birthday" id="birthday"/>
+                </div>
+
+                <!-- input senha -->
+                <div class="input_box">
+                    <label for="password" >Senha</label>
+                    <input type="password" name="password" id="password"placeholder="Senha"/>
+                </div>
+
+                <!-- botão cadastrar 
+                <button for="submit" class="submit">
+                        Cadastrar
+                </button>
+                -->
+                <div >
+                    <button for="submit" class="submit" value="Salvar" onclick="cadastro()">
                         Cadastrar
                     </button>
                 </div>
@@ -68,6 +81,10 @@
                 </div>
 
                 <div class="terms">
+                    <label for="terms">Termo: </label>
+                    <input class="box" type="checkbox" name="terms" id="terms" >
+                </div>
+                <div class="saiba_mais">
                     <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
                 </div>
             </div>
