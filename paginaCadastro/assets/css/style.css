@@ -36,7 +36,7 @@ body::before{
     padding: 60px;
     z-index: 90;
     position: relative;
-    max-width: 450px;
+    max-width: 550px;
     height: 750px;
     margin-left: 50%;
     background-color: rgba(0, 0, 0, 0.75);
@@ -155,10 +155,26 @@ body::before{
 }
 
 /*termos*/
-.terms {
+.saiba_mais{
     text-decoration: none;
     color: #0071eb;
 }
-.terms a:hover {
+.saiba_mais a:hover {
     text-decoration: underline;
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+}
+
+.terms {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    color: #737373;
+    height: 20px;
+}
+
+.terms label {
+    margin-right: 10px; /* Espaçamento entre o label e o checkbox */
 }
